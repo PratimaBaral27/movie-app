@@ -4,6 +4,8 @@ import styled from 'styled-components';
 import Axios from 'axios'
 import Nowplaying from './nowplaying'
 import {HomeWrapper} from './style'
+import PopularMovies from './popularMovies';
+import TopRatedMovies from './topRatedMovies';
 
  export default function HomePage(){
      const [nowPlaying, setnowPlaying] =useState([])
@@ -21,6 +23,8 @@ import {HomeWrapper} from './style'
              Axios.get(`https://api.themoviedb.org/3/movie/top_rated?api_key=${apiKey}&language=en-US&page=1`)
          ]);
          console.log(allMovies[0].data.results);
+         console.log(allMovies[1].data.results);
+         console.log(allMovies[2].data.results);
          setnowPlaying(allMovies[0].data.results)
          setpopularMovies(allMovies[1].data.results)
          settopRated(allMovies[2].data.results)
@@ -28,6 +32,8 @@ import {HomeWrapper} from './style'
      return(
          <HomeWrapper>
              <Nowplaying movie ={nowPlaying}/>
+             <PopularMovies movieP = {popularMovies} />
+             <TopRatedMovies movieT ={topRated} />
          </HomeWrapper>
      )
      return <h1>HomePage</h1>
