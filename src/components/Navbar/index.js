@@ -10,8 +10,8 @@ import {Link} from 'react-router-dom'
         <NavWrapper>
             <Container>
         <Navbar expand = "lg">
-            <Link to = "/"><img src = "/image/logo.svg" /> </Link>
-            {/* <Navbar.Brand href = "#home">React-BootStrap</Navbar.Brand> */}
+            {/* <Link to = "/"><img src = "/image/logo.svg" />MOVIEBOX </Link> */}
+            <Navbar.Brand href = "#home">MOVIEBOX</Navbar.Brand>
             <Navbar.Toggle aria-controls = "basic-navbar-nav" />
             <Navbar.Collapse id = "basic-navbar-nav">
                 <Form inline>
@@ -22,8 +22,8 @@ import {Link} from 'react-router-dom'
                     className = "mr-sm-2"
                     />
                 </Form>
-                <Nav className = "mr-auto">
-                    <Nav.Link href = "#home">Home</Nav.Link>
+                <Nav className = "ml-auto">
+                    <Nav.Link href = "#home" >Home</Nav.Link>
                     <Nav.Link href = "#home">Link</Nav.Link>
                 </Nav>
             </Navbar.Collapse>

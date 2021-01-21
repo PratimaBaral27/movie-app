@@ -4,7 +4,7 @@ import styled from 'styled-components';
  form{
      background:#fff;
      margin-left: 40px;
-     height: 40 px;
+     height: 40px;
      padding: 0 20px;
      border-radius: 100px;
  }
@@ -13,8 +13,6 @@ import styled from 'styled-components';
   }
   input: focus{
       box-shadow:none
-
   }
 
-  }
  `;                                                                                       
