@@ -49,6 +49,7 @@ export default function TopRatedMovies({movieT}) {
                 console.log(movieT);
                 return(
                     <React.Fragment>
+                      <Link to = {`/movie/${movieT.id}`}>
                         <Col md>
                        <Card>
                           <Card.Img variant="top" src={`https://image.tmdb.org/t/p/w500/${movieT.poster_path}`} /> 
@@ -57,6 +58,7 @@ export default function TopRatedMovies({movieT}) {
                             </Card.Body>
                              </Card>
                              </Col>
+                             </Link>
                     </React.Fragment>
                 );
             })}

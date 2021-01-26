@@ -49,6 +49,7 @@ export default function PopularMovies({movieP}) {
                 console.log(movieP);
                 return(
                     <React.Fragment>
+                       <Link to = {`/movie/${movieP.id}`}>
                         <Col>
                        <Card>
                           <Card.Img variant="top" src={`https://image.tmdb.org/t/p/w500/${movieP.poster_path}`} /> 
@@ -57,6 +58,7 @@ export default function PopularMovies({movieP}) {
                             </Card.Body>
                              </Card>
                              </Col>
+                             </Link>
                     </React.Fragment>
                 );
             })}

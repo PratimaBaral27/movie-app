@@ -50,6 +50,7 @@ import "slick-carousel/slick/slick-theme.css";
                 console.log(movie);
                 return(
                     <React.Fragment>
+                      <Link to = {`/movie/${movie.id}`}>
                         <Col>
                        <Card>
                           <Card.Img variant="top" src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} /> 
@@ -58,6 +59,7 @@ import "slick-carousel/slick/slick-theme.css";
                             </Card.Body>
                              </Card>
                              </Col>
+                             </Link>
                     </React.Fragment>
                 );
             })}

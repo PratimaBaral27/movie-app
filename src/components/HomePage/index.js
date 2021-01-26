@@ -11,17 +11,18 @@ import TopRatedMovies from './topRatedMovies';
      const [nowPlaying, setnowPlaying] =useState([])
      const [popularMovies, setpopularMovies] = useState([])
      const[topRated,settopRated] = useState([])
+    
      useEffect(() =>{
          getAllMovies()
           },[]);
      const getAllMovies = async () => {
-         let apiKey = '02689249b40636b114a2add6006bff65'
+         let apiKey = '41d53ce60f81201debd1f58add052d16'
         const allMovies= await Axios.all([
              Axios.get(`https://api.themoviedb.org/3/movie/now_playing?api_key=${apiKey}&language=en-US&page=1`),
-
              Axios.get(`https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&language=en-US&page=1`),
              Axios.get(`https://api.themoviedb.org/3/movie/top_rated?api_key=${apiKey}&language=en-US&page=1`)
          ]);
+
          console.log(allMovies[0].data.results);
          console.log(allMovies[1].data.results);
          console.log(allMovies[2].data.results);
@@ -36,6 +37,5 @@ import TopRatedMovies from './topRatedMovies';
              <TopRatedMovies movieT ={topRated} />
          </HomeWrapper>
      )
-     return <h1>HomePage</h1>
-
+    
 }

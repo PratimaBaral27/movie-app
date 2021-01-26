@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+
 export const FootWrapper= styled.div`
 .footer{
     margin-top: 1rem;
