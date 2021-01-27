@@ -21,5 +21,6 @@ import styled from 'styled-components';
   .form{
     height:60px;
     }
+}
 `;
 

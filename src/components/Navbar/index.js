@@ -21,7 +21,7 @@ export default function Navbars(){
                          <FormControl
                          type = "text"
                          placeholder = "Search"
-                         className = "mr-sm-0"
+                         className = "br-0"
                          />
                      </Form>
                      <Nav className = "ml-auto">

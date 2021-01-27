@@ -8,7 +8,7 @@ export const FootWrapper= styled.div`
     position: relative;
     bottom: 0;
     left: 0;
-    min-height: 25vh;
+    min-height: 25px;
     width: 100%; 
 }
 .ul{
