@@ -2,6 +2,7 @@ import styled from 'styled-components';
  export const NavWrapper = styled.div
  `
  background-color: #fdb73b;
+ padding-bottom:20px;
  form{
      background:#fff;
      margin-left:30px;

@@ -23,13 +23,17 @@ export default function SingleMoviePage(props){
         <>
         {isLoading? <div className="spinnerClass"> <Spinner animation="border" variant="warning"  /></div>:(
     
-        <Container className="mt-5">
-            <Row>
-                <Col>
+        <Container className="mt-5" fluid>
+                <Row >
+                    <Col sm ={6}>
                    <img src ={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
+                   class = "img-fluid"
+                   
                    alt="" />
                  </Col>
-                <Col>
+               
+                
+                <Col sm = {6}>
                     <h2>{movie.title}</h2>
                     <p>{movie.overview}</p>
                     <ul>
@@ -40,8 +44,9 @@ export default function SingleMoviePage(props){
                         </li>
                     </ul>
                 </Col>
+                </Row>
 
-            </Row>
+            
         
         </Container>
          )} </>
