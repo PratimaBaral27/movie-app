@@ -4,23 +4,22 @@ import styled from 'styled-components';
  background-color: #fdb73b;
  form{
      background:#fff;
-     margin-left: 40px;
+     margin-left: 30px;
      height: 40px;
      padding: 0 20px;
-     border-radius: 150px;
+     border-radius: 100px;
      
  }
   input{
       border:none;
+      padding: 2px;
+      width:280px;
+      padding:10px;
   }
   input: focus{
-      box-shadow:none
+      box-shadow:none;
+      border:none;
   }
-  @media screen and (max-width:640px)
-{
-  .form{
-    height:60px;
-    }
-}
+ 
 `;
 

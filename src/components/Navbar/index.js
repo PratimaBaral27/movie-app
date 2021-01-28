@@ -17,13 +17,9 @@ export default function Navbars(){
                  <Navbar.Toggle aria-controls = "basic-navbar-nav" />
                  <Navbar.Collapse id = "basic-navbar-nav">
                      <Form inline>
-                         <FaSearch></FaSearch>
-                         <FormControl
-                         type = "text"
-                         placeholder = "Search"
-                         className = "br-0"
-                         />
-                     </Form>
+                     <FaSearch></FaSearch>
+                        <FormControl type="text" placeholder="Search" className="mr-sm-2" />
+                       </Form>
                      <Nav className = "ml-auto">
                          <Nav.Link href = "#home" >Home</Nav.Link>
                          <Nav.Link href = "#home">Link</Nav.Link>
