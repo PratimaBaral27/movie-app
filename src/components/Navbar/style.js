@@ -4,7 +4,7 @@ import styled from 'styled-components';
  background-color: #fdb73b;
  form{
      background:#fff;
-     margin-left: 30px;
+     margin-left:30px;
      height: 40px;
      padding: 0 20px;
      border-radius: 100px;
@@ -13,7 +13,7 @@ import styled from 'styled-components';
   input{
       border:none;
       padding: 2px;
-      width:280px;
+      width:200px;
       padding:10px;
   }
   input: focus{
